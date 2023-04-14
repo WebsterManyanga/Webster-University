@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -47,8 +46,54 @@ body {
   gap: 45px;
 }
 
-.join-us {
+.link-btn {
+  text-decoration: none;
   border-radius: 5px;
   background-color: #23A6F0;
   padding: 15px 25px;
+  letter-spacing: 0.2px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
 }
+
+.main-header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main-header__intro {
+  width: 573px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-header__intro h1 {
+  color: #23A6F0;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+
+.main-header__intro h2 {
+  font-size: 58px;
+  letter-spacing: 0.2px;
+}
+
+.main-header p {
+  font-weight: 400;
+}
+
+.main-header__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.learn-more {
+  background:none;
+  border: 1px solid #26A6F0;
+  color: #23A6F0;
+}
+
