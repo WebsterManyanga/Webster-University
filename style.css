@@ -71,7 +71,7 @@ body {
   }
 
   .top-header__title {
-    font-size: 12vw;
+    font-size: 7vw;
   }
   .top-nav {
     display: none;
@@ -80,16 +80,16 @@ body {
 /*--------------------Welcome page------------------------------------*/
 .main-header {
   display: grid;
-  width: 100%;
+  width: 90%;
   height: 88vh;
   grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 
 }
 
 .main-header__intro {
-  width: 573px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -103,7 +103,7 @@ body {
 }
 
 .main-heading {
-  font-size: 58px;
+  font-size:3vw;
   letter-spacing: 0.2px;
 }
 
@@ -178,7 +178,6 @@ body {
               -2px 2px 5px rgb(92, 0, 0);
 }
 
-
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -188,6 +187,16 @@ body {
   }
 }
 
+@media screen and (max-width:700px) {
+  .main-header {
+    grid-template-columns: 100%;
+    align-items: start;
+  }
+
+  .main-header__board {
+    display: none;
+  }
+}
 .courses {
   
   display: grid;
