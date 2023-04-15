@@ -6,7 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -17,32 +16,37 @@ body {
   gap: 25px;
 }
 
+/*--------------------Header---------*/
 .top-header {
   width: 90%;
   height: 12vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   align-items: center;
-  gap: 76px;
   font-weight: 700;
   margin: 0 auto;
 }
 
 .top-header__title {
-  font-size: 1.6vw;
+  font-size: 3vw;
 }
 
 .top-nav {
-  display: flex;
-  gap: 240px;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 50% 50%;
 }
 
 .top-nav__sections {
   display: flex;
   align-items: center;
   list-style-type: none;
-  gap: 21px;
-  font-size: 14px;
+  justify-content:space-between;
+  font-size: 1vw;
+}
+
+.account-login {
+  justify-content: space-evenly;
 }
 
 .top-nav__sections a {
@@ -50,21 +54,30 @@ body {
   color: inherit;
 }
 
-.top-nav__sections:last-child {
-  gap: 45px;
-}
 
 .link-btn {
   text-decoration: none;
   border-radius: 5px;
   background-color: #23A6F0;
-  padding: 15px 25px;
+  padding: 15px 30px;
   letter-spacing: 0.2px;
   color: inherit;
-  font-size: 14px;
   font-weight: 700;
 }
 
+@media screen and (max-width:700px) {
+  .top-header {
+    grid-template-columns: 100%;
+  }
+
+  .top-header__title {
+    font-size: 12vw;
+  }
+  .top-nav {
+    display: none;
+  }
+}
+/*--------------------Welcome page------------------------------------*/
 .main-header {
   display: grid;
   width: 100%;
