@@ -12,16 +12,17 @@ body {
 
 .top-header {
   width: 90%;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 76px;
   font-weight: 700;
-  margin: 16px auto 0 auto ;
+  margin: 0 auto;
 }
 
 .top-header__title {
-  font-size: 24px;
+  font-size: 1.6vw;
 }
 
 .top-nav {
@@ -59,6 +60,8 @@ body {
 
 .main-header {
   display: grid;
+  width: 100%;
+  height: 88vh;
   grid-template-columns: 50% 50%;
 }
 
@@ -97,3 +100,65 @@ body {
   color: #23A6F0;
 }
 
+.main-header__board {
+  position: relative;
+}
+
+.main-header__board div {
+  border: 1.6px solid #FFC7D4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board__1 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  animation: spin infinite 8s linear;
+}
+
+.board__1::after {
+  position: absolute;
+  top: -2%;
+  content: '';
+  width: 3%;
+  height: 3%;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(92, 0, 0),
+              -2px -2px 5px rgb(92, 0, 0),
+              2px -2px 5px rgb(92, 0, 0),
+              -2px 2px 5px rgb(92, 0, 0);
+}
+
+.board__circle {
+  position: relative;
+  width: 66%;
+  height: 66%;
+}
+
+.board__circle::after {
+  position: absolute;
+  top: -2%;
+  content: '';
+  width: 3%;
+  height: 3%;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(92, 0, 0),
+              -2px -2px 5px rgb(92, 0, 0),
+              2px -2px 5px rgb(92, 0, 0),
+              -2px 2px 5px rgb(92, 0, 0);
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
