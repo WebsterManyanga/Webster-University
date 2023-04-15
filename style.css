@@ -349,3 +349,51 @@ body {
   font-weight: 700;
 
 }
+
+
+/*-----------Footer---------------------------*/
+
+.contact {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  background-color: #fff;
+  color: #737373;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact h1 {
+  color: #252B42;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.contact p {
+  font-weight: 400;
+  width: 60%;
+}
+.contact ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#social-media-links {
+  flex-direction: row;
+  font-size: 22px;
+  color: #23A6F0;
+  gap: 20px;
+}
