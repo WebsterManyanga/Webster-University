@@ -14,9 +14,9 @@
     <h1 class="top-header__title">Webster University</h1>
     <nav class="top-nav">
       <ul class="top-nav__sections">
-        <li><a href="">Home</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Pricing</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="">Contact</a></li>
       </ul>
       <ul class="top-nav__sections">
@@ -29,7 +29,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main-content">
     <header class="main-header">
       <section class="main-header__intro">
         <h1 class="top-heading">Welcome</h1>
@@ -50,7 +50,7 @@
         </div>
       </aside>
     </header>
-    <article class="courses">
+    <article class="courses" id="courses">
       <header>
         <h1 class="top-heading">Enroll Today</h1>
         <h2 class="main-heading">
@@ -76,10 +76,7 @@
               <h1 class="top-heading">English</h1>
               <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
             </div>
-            <h2>Graphic Design</h2>
-            <p>
-              Explores graphic communication through principles of design
-            </p>
+            <h2>Art Classes</h2>
             <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
             <p class="price"><span class="old-price">$80.00</span> $69.99</p>
             <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
@@ -87,7 +84,47 @@
         </div>
         <div class="product-card">
           <div class="product-card__top sale">
-            <img src="./images/product-cards/1.jpg" alt="course"> 
+            <img src="./images/product-cards/2.jpg" alt="course"> 
+            <div class="product-card__buttons">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-card__details">
+            <div class="product-card__language">
+              <h1 class="top-heading">English</h1>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+            <h2>Photography</h2>
+            <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
+            <p class="price"><span class="old-price">$80.00</span> $69.99</p>
+            <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__top sale">
+            <img src="./images/product-cards/3.jpg" alt="course"> 
+            <div class="product-card__buttons">
+              <button><i class="fa-solid fa-heart"></i></button>
+              <button><i class="fa-solid fa-cart-shopping"></i></button>
+              <button><i class="fa-solid fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-card__details">
+            <div class="product-card__language">
+              <h1 class="top-heading">English</h1>
+              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+            </div>
+            <h2>Web Development</h2>
+            <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
+            <p class="price"><span class="old-price">$80.00</span> $69.99</p>
+            <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__top sale">
+            <img src="./images/product-cards/4.jpg" alt="course"> 
             <div class="product-card__buttons">
               <button><i class="fa-solid fa-heart"></i></button>
               <button><i class="fa-solid fa-cart-shopping"></i></button>
@@ -100,61 +137,41 @@
               <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
             </div>
             <h2>Graphic Design</h2>
-            <p>
-              Explores graphic communication through principles of design
-            </p>
             <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
             <p class="price"><span class="old-price">$80.00</span> $69.99</p>
             <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__top sale">
-            <img src="./images/product-cards/1.jpg" alt="course"> 
-            <div class="product-card__buttons">
-              <button><i class="fa-solid fa-heart"></i></button>
-              <button><i class="fa-solid fa-cart-shopping"></i></button>
-              <button><i class="fa-solid fa-eye"></i></button>
-            </div>
-          </div>
-          <div class="product-card__details">
-            <div class="product-card__language">
-              <h1 class="top-heading">English</h1>
-              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
-            </div>
-            <h2>Graphic Design</h2>
+      </div>
+    </article>
+    <article class="reviews" id="reviews">
+      <header>
+        <h1 class="top-heading">Student Reviews</h1>
+        <h2 class="main-heading">Every course is worth it!</h2>
+        <p class="heading-caption">Here are some reviews from people who decided to enroll.</p>
+      </header>
+      <div class="student-review-cards">
+        <div class="student-card">
+          <img src="./images/students/1.jpg" alt="student">
+          <div class="student-details">
             <p>
-              Explores graphic communication through principles of design
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus unde, similique sit sapiente mollitia voluptate consequatur ullam reiciendis eligendi blanditiis iusto architecto non distinctio excepturi omnis consectetur nam totam? Obcaecati?
             </p>
-            <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
-            <p class="price"><span class="old-price">$80.00</span> $69.99</p>
-            <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
+            <div class="student-details__name">Ashely</div>
+            <div class="student-details__job">Graphics Designer</div>
+  
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__top sale">
-            <img src="./images/product-cards/1.jpg" alt="course"> 
-            <div class="product-card__buttons">
-              <button><i class="fa-solid fa-heart"></i></button>
-              <button><i class="fa-solid fa-cart-shopping"></i></button>
-              <button><i class="fa-solid fa-eye"></i></button>
-            </div>
-          </div>
-          <div class="product-card__details">
-            <div class="product-card__language">
-              <h1 class="top-heading">English</h1>
-              <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
-            </div>
-            <h2>Graphic Design</h2>
+        <div class="student-card">
+          <img src="./images/students/2.jpg" alt="student">
+          <div class="student-details">
             <p>
-              Explores graphic communication through principles of design
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus unde, similique sit sapiente mollitia voluptate consequatur ullam reiciendis eligendi blanditiis iusto architecto non distinctio excepturi omnis consectetur nam totam? Obcaecati?
             </p>
-            <p><i class="fa-solid fa-arrow-down"></i> 15 Sales</p>
-            <p class="price"><span class="old-price">$80.00</span> $69.99</p>
-            <a class="enroll" href="">Enroll <i class="fa-solid fa-angle-right"></i></a>
+            <div class="student-details__name">Michelle</div>
+            <div class="student-details__job">Software Engineer</div>  
           </div>
         </div>
-
       </div>
     </article>
   </main>
