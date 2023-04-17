@@ -229,7 +229,7 @@ body {
 
 .product-card {
   width: 16.5%;
-  height: fit-content;
+  height: fit-content; 
   background-color: #fff;
   margin: 0 auto;
   border-radius: 5px;
@@ -344,9 +344,11 @@ body {
 @media screen and (max-width:700px) {
   .courses {
     margin-top: 50px;
+    height: fit-content;
   }
 
   .courses-cards {
+    margin-top: 25px;
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -366,24 +368,24 @@ body {
 }
 
 
-
+/*---------------------Student Reviews-------------------------*/
 .reviews{
   padding-top: 20px;
-  width: 80vw;
+  width: 90%;
   margin: 0 auto;
   height: 100vh;
   display: grid;
   grid-template-rows: 20% 80%;
-  justify-content: center;
-  align-items: center;
+}
+
+.reviews header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .student-review-cards {
-  width: 80%;
-  height: fit-content;
-  display: flex;
-  gap: 33px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .student-card {
