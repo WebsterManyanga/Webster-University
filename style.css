@@ -396,11 +396,13 @@ body {
   color:#737373;
   background-color: #fff;
   display: flex;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
 }
 
 .student-card img {
+  width: 30%;
   border-radius: 50%;
 }
 
@@ -420,6 +422,31 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width:700px) {
+  .reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .student-review-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .student-card {
+    width: 80%;
+    height: 160px
+  }
+
+  .student-details {
+    font-size: 2.3vw;
+  }
+
+
+
+}
 
 /*-----------Footer---------------------------*/
 
