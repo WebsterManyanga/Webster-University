@@ -18,6 +18,7 @@ body {
   align-items: center;
 }
 
+
 /*--------------------Header---------*/
 .top-header {
   width: 90%;
@@ -193,6 +194,7 @@ body {
   .main-header {
     grid-template-columns: 100%;
     align-items: start;
+    height: fit-content;
   }
 
   .main-header__board {
@@ -212,6 +214,11 @@ body {
   box-sizing: border-box;
 }
 
+.courses header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 .courses-cards {
   display: flex;
@@ -332,6 +339,33 @@ body {
   padding: 5px 20px;
   align-self: center;
 }
+
+
+@media screen and (max-width:700px) {
+  .courses {
+    margin-top: 50px;
+  }
+
+  .courses-cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .product-card {
+    width: 90%;
+  }
+  
+  .sale::after {
+    font-size: 3vw;
+  }
+
+  .product-card__details {
+    font-size: 3vw;
+  }
+  
+}
+
+
 
 .reviews{
   padding-top: 20px;
