@@ -37,6 +37,7 @@ body {
 .top-header__title {
   font-size: 3vw;
   user-select: none;
+  text-shadow: 1px 1px 1px #23A6F0;
 }
 
 .top-nav {
