@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Webster-University/static/css/main.ee65c15a.css",
+    "main.js": "/Webster-University/static/js/main.0c27b3fe.js",
+    "static/js/787.b701888c.chunk.js": "/Webster-University/static/js/787.b701888c.chunk.js",
+    "static/media/3.jpg": "/Webster-University/static/media/3.a4839186815e06415de5.jpg",
+    "static/media/4.jpg": "/Webster-University/static/media/4.001b14391a225708542f.jpg",
+    "static/media/2.jpg": "/Webster-University/static/media/2.ceac61d9023f2dd14100.jpg",
+    "static/media/1.jpg": "/Webster-University/static/media/1.e46fa9f1e291d3f5cf22.jpg",
+    "index.html": "/Webster-University/index.html",
+    "main.ee65c15a.css.map": "/Webster-University/static/css/main.ee65c15a.css.map",
+    "main.0c27b3fe.js.map": "/Webster-University/static/js/main.0c27b3fe.js.map",
+    "787.b701888c.chunk.js.map": "/Webster-University/static/js/787.b701888c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee65c15a.css",
+    "static/js/main.0c27b3fe.js"
+  ]
+}
