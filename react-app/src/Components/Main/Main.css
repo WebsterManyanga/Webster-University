@@ -1,0 +1,234 @@
+.main-content {
+  flex: 1 0 auto;
+}
+
+/*--------------------Welcome page------------------------------------*/
+.main-header {
+  display: grid;
+  width: 90%;
+  height: 88vh;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.main-header__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.top-heading {
+  color: #23A6F0;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+
+.main-heading {
+  font-size:3vw;
+  letter-spacing: 0.2px;
+}
+
+.heading-caption {
+  font-weight: 400;
+}
+
+.main-header__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.learn-more {
+  background:none;
+  border: 1px solid #26A6F0;
+  color: #23A6F0;
+}
+
+.main-header__board {
+  position: relative;
+}
+
+.main-header__board div {
+  margin: 0 auto;
+  border: 1.6px solid #FFC7D4;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board__1 {
+  width: 60vh;
+  height: 60vh;
+  position: relative;
+  animation: spin infinite 8s linear;
+}
+
+.board__1::after {
+  position: absolute;
+  top: -2%;
+  content: '';
+  width: 3%;
+  height: 3%;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(92, 0, 0),
+              -2px -2px 5px rgb(92, 0, 0),
+              2px -2px 5px rgb(92, 0, 0),
+              -2px 2px 5px rgb(92, 0, 0);
+}
+
+.board__circle {
+  position: relative;
+  width: 66%;
+  height: 66%;
+}
+
+.board__circle::after {
+  position: absolute;
+  top: -2%;
+  content: '';
+  width: 3%;
+  height: 3%;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgb(92, 0, 0),
+              -2px -2px 5px rgb(92, 0, 0),
+              2px -2px 5px rgb(92, 0, 0),
+              -2px 2px 5px rgb(92, 0, 0);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:700px) {
+  .main-header {
+    grid-template-columns: 100%;
+    align-items: start;
+    height: fit-content;
+  }
+
+  .main-header__board {
+    display: none;
+  }
+}
+
+/*---------------------Courses------------------*/
+.courses {
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 5% 0;
+  box-sizing: border-box;
+}
+
+.courses header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.courses-cards {
+  display: flex;
+  height: 53%;
+  gap: 3%;
+  width: 100%;
+}
+
+
+
+/*---------------------Student Reviews-------------------------*/
+.reviews{
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+}
+
+.reviews header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.student-review-cards {
+  width: 100%;
+  display: flex;
+}
+
+.student-card {
+  width: 40%;
+  border-radius: 15px;
+  margin: 0 auto;
+  color:#737373;
+  background-color: #fff;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-card img {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.student-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  font-size: 1.7vw;
+}
+
+.student-details__name {
+  font-weight: 700;
+}
+
+.student-details__job {
+  font-weight: 700;
+}
+
+@media screen and (max-width:700px) {
+  .reviews {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .student-review-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .student-card {
+    width: 80%;
+    height: 160px
+  }
+
+  .student-details {
+    font-size: 2.3vw;
+  }
+
+
+
+}
+
